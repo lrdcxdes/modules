@@ -23,5 +23,5 @@ async def haste_cmd(_, message: Message):
 
 	await message.reply(
         url,
-        reply_to_message_id=message.reply_to_message.message_id
+        reply_to_message_id=message.reply_to_message.id
     ) if message.reply_to_message else await message.edit(url)
